@@ -10,9 +10,7 @@ import datetime
 testelo: EloEco = None
 try:
     testelo = pickle.load(open('elosystem.p', 'rb'))
-    # Store configuration file values
 except FileNotFoundError:
-    # Keep preset values
     sourcepage = 'https://www.sports-reference.com/cbb/schools/'
 
     rooturl = 'https://www.sports-reference.com'
